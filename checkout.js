@@ -551,7 +551,7 @@ function mostrarInstrucoesPagamento(metodo, valor, numeroPedido) {
             <p>Para pagar via PIX, use o CNPJ abaixo:</p>
             <div class="cnpj-box">
                 <label>CNPJ:</label>
-                <div class="cnpj-numero">12.345.678/0001-90</div>
+                <div class="cnpj-numero">6e5b58a3-38f3-465d-b4b6-a6c4abdb022e</div>
             </div>
             <button class="copy-btn" onclick="copiarCNPJ()">
                 <i class="ph ph-copy"></i> Copiar CNPJ
@@ -566,7 +566,7 @@ function mostrarInstrucoesPagamento(metodo, valor, numeroPedido) {
 }
 
 function copiarCNPJ() {
-    const cnpj = '12.345.678/0001-90';
+    const cnpj = '6e5b58a3-38f3-465d-b4b6-a6c4abdb022e';
     navigator.clipboard.writeText(cnpj).then(() => {
         const btn = document.querySelector('.copy-btn');
         btn.innerHTML = '<i class="ph ph-check"></i> CNPJ Copiado!';
